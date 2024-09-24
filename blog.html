@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Daisy UI CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- google Font API -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+     <Style>
+         .lexend {
+             font-family: "Lexend", sans-serif;
+         }
+ 
+         .lime {
+             background-color: rgb(180, 244, 97);
+         }
+     </Style>
+</head>
+<body class="lexend">
+
+
+
+    <!-- navbar section -->
+   
+    <div class="navbar bg-base-100  ">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-gray-400 rounded-box z-[1] mt-3 w-48 h-auto p-4 shadow">
+            
+            <li> <img class="w-12" src="assets/logo.png" alt=""></li>
+            <li><a class="text-sm">Donate
+              Bangladesh</a></li>
+          </ul>
+        </div>
+        
+          <a href="blog.html"><button class="btn px-8 lime text-xl text-black">Blog</button></a> 
+      
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <img class="w-12" src="assets/logo.png" alt=""><a class="btn btn-ghost text-xl">Donate
+              Bangladesh</a>
+        </ul>
+      </div>
+      <div class="navbar-end">
+          <img src="assets/coin.png" alt="">
+          <p id="total_money_id" class="text-xl pr-3"> 5500 </p><span>BDT</span> 
+      </div>
+    </div>
+    <!-- navbar section -->
+
+
+
+
+
+    <main>
+        <section class="max-w-screen-xl mx-auto mt-6 p-5">
+            <h1 class="text-4xl font-extrabold">Important FAQ</h1><br>
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is Document Object Model(DOM)?</div>
+                <div class="collapse-content">
+                  <p>The Document Object Model (DOM) is a programming interface for web documents.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mt-6">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">How do you selecr an element from DOM?</div>
+                <div class="collapse-content">
+                  <p>const element = document.getElementById("myElementId"); </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mt-6">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of DOM and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>Event delegation is a technique in JavaScript where you attach a single event listener to a parent element, and that listener handles events triggered by its child elements.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mt-6">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and styles using this DOM?</div>
+                <div class="collapse-content">
+                  <p>You can manipulate an element's attributes and styles using the DOM in JavaScript by interacting with specific properties and methods of the element.</p>
+                </div>
+              </div>
+            </section>
+    </main>  
+</body>
+</html>
