@@ -40,8 +40,8 @@
 
 <body class="lexend">
     <!-- navbar section -->
-  <div class="sticky top-0 z-40 bg-slate-100 p-1">
-    <div class="navbar bg-slate-100 ">
+  <div class="sticky top-0 z-40 bg-slate-50 p-1">
+    <div class="navbar bg-slate-50 ">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -103,6 +103,7 @@
         </section>
         <!-- card section -->
         <section>
+          <div id="all_card">
             <!-- card-1 start-->
             <div class="card lg:card-side bg-base-100 shadow-xl p-8 grid grid-cols-1 lg:grid-cols-2 border-2 border-gray-200 mb-5">
                 <div class="">
@@ -110,7 +111,7 @@
                 </div>
                 <div class="card-body">
                     <span><button  class="btn"><img src="assets/coin.png" alt=""><span id="noakhali_money_id">0</span> BDT</button></span>
-                    <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="card-title">Donate for <p id="c1">Flood at Noakhali, Bangladesh</p></h2>
                     <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
                         donation will help provide essential supplies and to those affected by this disaster. Every
                         contribution, big or small, makes difference. Please join us in supporting the relief efforts
@@ -144,7 +145,7 @@
                 </div>
                 <div class="card-body">
                     <span><button class="btn"><img src="assets/coin.png" alt=""><span id="feni_money_id">0</span> BDT</button></span>
-                    <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <h2 class="card-title">Donate for <p id="c2"> Flood Relief in Feni,Bangladesh</p></h2>
                     <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                     <input class="p-5 mb-3 rounded-lg"type="text" name="" id="feni_input_id" placeholder="Write Donation Amount">
                     <button id="feni_donate_button" class="btn btn-primary">Donate Now</button>   
@@ -158,19 +159,29 @@
                 </div>
                 <div class="card-body">
                     <span><button class="btn"><img src="assets/coin.png" alt=""><span id="quota_money_id">0</span> BDT</button></span>
-                    <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+                    <h2 class="card-title">Aid for <p id="c3">Injured in the Quota Movement </p></h2>
                     <p> TThe recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                     <input class="p-5 mb-3 rounded-lg"type="text" name="" id="quota_input_id" placeholder="Write Donation Amount">
                     <button id="quota_donate_button" class="btn btn-primary" >Donate Now</button>   
                 </div>
             </div>
             <!-- card-3 end-->
+          </div>
+
+            <!-- History Section -->
+
+           <div id="history_section" class="hidden">
+           
+          </div>
+
+               <!-- History Section End -->
+
         </section>
     </main>
     <footer></footer>
 </body>
 
 <script src="script.js"></script>
-<script src="id.js"></script>
+<script src="common_id.js"></script>
 
 </html>
