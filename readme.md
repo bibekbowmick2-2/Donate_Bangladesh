@@ -1,5 +1,16 @@
 # Welcome to Assignment 5
 
+
+# Design of the website with tailwind css and javascript
+![Screenshot_1](https://github.com/user-attachments/assets/4a457be9-f60e-4085-b39c-7752eaf61b81)
+
+![Screenshot_2](https://github.com/user-attachments/assets/9f6e4a2e-d0bd-4a9b-87f4-cc5fc1fb16f7)
+![Screenshot_3](https://github.com/user-attachments/assets/7d72194a-dccd-4dea-879e-92be70cc7f4f)
+
+![Screenshot_4](https://github.com/user-attachments/assets/980ee07a-c6c9-4b82-ba2a-f9cce9bc2281)
+![Screenshot_6](https://github.com/user-attachments/assets/247eab75-5168-4058-a359-32c875562e5d)
+![Screenshot_7](https://github.com/user-attachments/assets/157ba297-c89c-4da5-b62c-3d2ffffc0961)
+
 ## <img width=30px src="assets/logo.png"/> DONATE BANGLADESH
 
 ## Key Rule
