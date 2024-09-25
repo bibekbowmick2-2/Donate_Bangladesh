@@ -11,10 +11,6 @@ function common_id_function(id)
 
 
 
-function handleFormSubmit(event, modalId) {
-  event.preventDefault(); // Prevent form from reloading the page
-  const modal = document.getElementById(modalId);
-  modal.close(); // Close the modal manually
-}
+
 
   

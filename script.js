@@ -9,6 +9,13 @@ let noakhali_donate_button = document.getElementById("noakhali_donate_button");
 let feni_donate_button = document.getElementById("feni_donate_button");
 let quota_donate_button = document.getElementById("quota_donate_button");
 
+
+let my_modal_1 = document.getElementById("my_modal_1");
+let my_modal_2 = document.getElementById("my_modal_2");
+let my_modal_3 = document.getElementById("my_modal_3");
+
+
+
 let side_value1 = 0, side_value2 = 0, side_value3 = 0;
 
 // For history section
@@ -18,26 +25,46 @@ let c1 = document.getElementById("c1");
 let c2 = document.getElementById("c2");
 let c3 = document.getElementById("c3");
 
+
 // Common function to update total and specific card value
-function handleDonation(inputField, currentSideValue, displayElementId, cardText) {
+function handleDonation(inputField, currentSideValue, displayElementId, cardText,modal_id) {
     let value = parseFloat(inputField.value);
     if (isNaN(value) || value < 0) {
+        modal_id.close();
         alert("Please enter a valid amount");
-        return currentSideValue;
+        money_id.innerText = currentSideValue;
+        return;
     }
 
-    currentSideValue += value;
-    let money_id = common_id_function(displayElementId);
-    money_id.innerText = currentSideValue;
+    else{
+        modal_id.showModal();
+        currentSideValue += value;
+        let money_id = common_id_function(displayElementId);
+        money_id.innerText = currentSideValue;
+    
+        // Update total money
+        total_money_id.innerText = parseFloat(total_money_id.innerText) - value;
+    
+        // Append to history section(Common Function)
+        appendHistory(currentSideValue, cardText);
+    
+        return currentSideValue;
 
-    // Update total money
-    total_money_id.innerText = parseFloat(total_money_id.innerText) - value;
+    }
 
-    // Append to history section(Common Function)
-    appendHistory(currentSideValue, cardText);
-
-    return currentSideValue;
+ 
 }
+
+
+
+
+function handleFormSubmit(event, modalId) {
+    event.preventDefault(); // Prevent form from reloading the page
+    const modal = document.getElementById(modalId);
+    modal.close(); // Close the modal manually
+  }
+
+
 
 // Function to append donation to the history section
 function appendHistory(amount, cardText) {
@@ -61,15 +88,15 @@ function appendHistory(amount, cardText) {
 
 // Event listeners for each donation button
 noakhali_donate_button.addEventListener("click", function() {
-    side_value1 = handleDonation(noakhali_input_id, side_value1, "noakhali_money_id", c1.innerText);
+    side_value1 = handleDonation(noakhali_input_id, side_value1, "noakhali_money_id", c1.innerText,my_modal_1);
 });
 
 feni_donate_button.addEventListener("click", function() {
-    side_value2 = handleDonation(feni_input_id, side_value2, "feni_money_id", c2.innerText);
+    side_value2 = handleDonation(feni_input_id, side_value2, "feni_money_id", c2.innerText,my_modal_2);
 });
 
 quota_donate_button.addEventListener("click", function() {
-    side_value3 = handleDonation(quota_input_id, side_value3, "quota_money_id", c3.innerText);
+    side_value3 = handleDonation(quota_input_id, side_value3, "quota_money_id", c3.innerText,my_modal_3);
 });
 
 
