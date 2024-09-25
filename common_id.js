@@ -6,12 +6,15 @@ function common_id_function(id)
 
 
 
-const closeForm = document.getElementById("closeForm");
 
-closeForm.addEventListener("submit", function(event) {
-  event.preventDefault(); 
-  const modal = document.getElementById("my_modal_1");
-  modal.close(); // Close the modal
-});
+
+
+
+
+function handleFormSubmit(event, modalId) {
+  event.preventDefault(); // Prevent form from reloading the page
+  const modal = document.getElementById(modalId);
+  modal.close(); // Close the modal manually
+}
 
   
